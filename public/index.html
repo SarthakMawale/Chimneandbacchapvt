@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Chat 💕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="name-prompt" class="name-prompt">
+    <h2>Welcome to Our Love Chat 💖</h2>
+    <input type="text" id="name-input" placeholder="Enter your name, darling..." onkeypress="if(event.key === 'Enter') enterChat()">
+    <input type="password" id="password-input" placeholder="Enter password, sweetheart..." onkeypress="if(event.key === 'Enter') enterChat()">
+    <button onclick="enterChat()">Join Chat 💞</button>
+  </div>
+  <div class="chat-container" id="chat-container" style="display: none;">
+    <div class="chat-header">
+      <h1>Our Little Love Chat 💖</h1>
+      <button onclick="toggleTheme()" id="theme-toggle">🌙</button>
+    </div>
+    <div id="host-controls" style="display: none;">
+      <input type="text" id="new-password-input" placeholder="Set new password...">
+      <button onclick="generatePasswordAndLink()">Generate & Share Link 🔗</button>
+      <p id="share-link" style="display: none;"></p>
+    </div>
+    <div id="chat-box"></div>
+    <div id="typing-indicator" style="display: none;"></div>
+    <div class="input-container">
+      <input type="text" id="message-input" placeholder="Type your message, my love...">
+      <label for="file-input" class="attach-button">📎</label>
+      <input type="file" id="file-input" style="display: none;" accept="image/*,video/*,*">
+      <button id="mic-btn" onclick="toggleRecording()">🎙️</button>
+      <button onclick="sendMessage()">Send 💌</button>
+    </div>
+  </div>
+  <audio id="send-sound" src="/send-sound.mp3"></audio>
+  <audio id="receive-sound" src="/receive-sound.mp3"></audio>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
