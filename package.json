@@ -1,0 +1,25 @@
+{
+  "name": "private-chat",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.8.1"
+  },
+  "bin": {
+    "private-chat": "server.js"
+  },
+  "description": "",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
