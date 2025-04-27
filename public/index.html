@@ -3,30 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Love Chat 💕</title>
+  <title>Love Buddy 💞</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="name-prompt" class="name-prompt">
-    <h2>Welcome to Our Love Chat 💖</h2>
-    <input type="text" id="name-input" placeholder="Enter your name, darling..." onkeypress="if(event.key === 'Enter') enterChat()">
-    <input type="password" id="password-input" placeholder="Enter password, sweetheart..." onkeypress="if(event.key === 'Enter') enterChat()">
-    <button onclick="enterChat()">Join Chat 💞</button>
+    <h2>Welcome to Love Buddy 💖</h2>
+    <p>Begin your heartfelt journey...</p>
+    <input type="text" id="name-input" placeholder="Your name, my dear..." onkeypress="if(event.key === 'Enter') enterChat()">
+    <input type="password" id="password-input" placeholder="Your secret key..." onkeypress="if(event.key === 'Enter') enterChat()">
+    <button onclick="enterChat()">Enter Our World 💞</button>
   </div>
   <div class="chat-container" id="chat-container" style="display: none;">
     <div class="chat-header">
-      <h1>Our Little Love Chat 💖</h1>
+      <h1>Love Chimne 💖</h1>
       <button onclick="toggleTheme()" id="theme-toggle">🌙</button>
     </div>
     <div id="host-controls" style="display: none;">
-      <input type="text" id="new-password-input" placeholder="Set new password...">
-      <button onclick="generatePasswordAndLink()">Generate & Share Link 🔗</button>
+      <input type="text" id="new-password-input" placeholder="Set a new secret key...">
+      <button onclick="generatePasswordAndLink()">Share Our Secret 🔗</button>
       <p id="share-link" style="display: none;"></p>
     </div>
     <div id="chat-box"></div>
     <div id="typing-indicator" style="display: none;"></div>
     <div class="input-container">
-      <input type="text" id="message-input" placeholder="Type your message, my love...">
+      <input type="text" id="message-input" placeholder="Whisper your heart's words...">
       <label for="file-input" class="attach-button">📎</label>
       <input type="file" id="file-input" style="display: none;" accept="image/*,video/*,*">
       <button id="mic-btn" onclick="toggleRecording()">🎙️</button>
