@@ -318,7 +318,7 @@ h1 {
   justify-content: center;
 }
 
-/* Responsive Design for Tablets and Larger Mobile Devices */
+/* Responsive Design */
 @media (max-width: 768px) {
   .name-prompt {
     width: 100%;
@@ -362,73 +362,13 @@ h1 {
   }
 }
 
-/* Responsive Design for Smaller Mobile Devices (480px and below) */
 @media (max-width: 480px) {
   .name-prompt h2 {
-    font-size: 26px; /* Slightly larger for readability */
-  }
-
-  .name-prompt p {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 22px; /* Prevent shrinking too much */
-  }
-
-  #host-controls {
-    font-size: 13px;
-  }
-
-  #share-link {
-    font-size: 12px;
-  }
-
-  #chat-box {
-    margin: 10px 0;
-    padding: 14px; /* Slightly more padding for comfort */
-  }
-
-  .message {
-    max-width: 85%; /* Allow more width for readability */
-    padding: 10px;
-  }
-
-  .message .name {
-    font-size: 12px;
-  }
-
-  .message .timestamp {
-    font-size: 10px;
-  }
-
-  .input-container {
-    gap: 10px;
-    padding: 10px;
-  }
-}
-
-/* Fine-Tuning for Very Small Screens (400px and below) */
-@media (max-width: 400px) {
-  .name-prompt {
-    padding: 15px;
-  }
-
-  .name-prompt h2 {
-    font-size: 24px; /* Ensure readable size */
+    font-size: 24px;
   }
 
   .name-prompt p {
     font-size: 14px;
-  }
-
-  #name-input, #password-input, #new-password-input {
-    padding: 10px;
-    font-size: 15px; /* Prevent shrinking too much */
-  }
-
-  .chat-container {
-    padding: 12px;
   }
 
   h1 {
@@ -436,53 +376,18 @@ h1 {
   }
 
   #host-controls {
-    gap: 6px;
-  }
-
-  #host-controls button {
-    padding: 8px;
-    font-size: 13px;
-  }
-
-  #share-link {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   #chat-box {
-    padding: 12px;
     margin: 8px 0;
   }
 
   .message {
-    max-width: 90%; /* Use more screen width */
-    padding: 8px;
-  }
-
-  .message .name {
-    font-size: 11px;
-  }
-
-  .message .timestamp {
-    font-size: 9px;
-  }
-
-  #typing-indicator {
-    font-size: 12px;
+    max-width: 80%;
   }
 
   .input-container {
     gap: 8px;
-    padding: 8px;
-  }
-
-  #message-input {
-    font-size: 14px; /* Maintain readable size */
-    padding: 10px;
-  }
-
-  #mic-btn, .attach-button, button {
-    padding: 8px;
-    font-size: 13px; /* Slightly smaller but readable */
-    min-width: 40px; /* Ensure buttons are tappable */
   }
 }
